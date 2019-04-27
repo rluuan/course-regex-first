@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codigo Fonte</title>
+    <style>
+        code { font-size: 26px; }
+    </style>
+</head>
+<body>
+    <h1>Codigo Fonte</h1>
+    <pre>
+        <code>
+            <span style="color: #267703"><b>// how to create a function segment tree 
+</b></span>            #include <span style="color: #ce9178"><b>"bits/stdc++.h"</b></span>
+
+            <span style="color: #d857cf"><b>using</b></span> namespace std;
+
+            <span style="color: #1385e2"><b>void</b></span> <span style="color: #2f3cef"><b>build</b></span>(<span style="color: #1385e2"><b>int</b></span> no, <span style="color: #1385e2"><b>int</b></span> l, <span style="color: #1385e2"><b>int</b></span> r) {
+                <span style="color: #d857cf"><b>if</b></span> (l == r) {
+                    return;
+                }
+                <span style="color: #2f3cef"><b>build</b></span>(x + x, l, (l + r) >> 1);
+                <span style="color: #2f3cef"><b>build</b></span>(x + x + 1, ((l + r) >> 1) + 1, r);
+            }
+            <span style="color: #1385e2"><b>int</b></span> <span style="color: #2f3cef"><b>main</b></span>() {
+                <span style="color: #1385e2"><b>int</b></span> n = 1000;
+
+                <span style="color: #2f3cef"><b>build</b></span>(1, 1, n);
+                return 0;
+            }
+        </code>
+    </pre>
+</body>
+</html>

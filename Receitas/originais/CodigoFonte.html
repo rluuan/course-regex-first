@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codigo Fonte</title>
+    <style>
+        code { font-size: 26px; }
+    </style>
+</head>
+<body>
+    <h1>Codigo Fonte</h1>
+    <pre>
+        <code>
+            // how to create a function segment tree 
+            #include "bits/stdc++.h"
+
+            using namespace std;
+
+            void build(int no, int l, int r) {
+                if (l == r) {
+                    return;
+                }
+                build(x + x, l, (l + r) >> 1);
+                build(x + x + 1, ((l + r) >> 1) + 1, r);
+            }
+            int main() {
+                int n = 1000;
+
+                build(1, 1, n);
+                return 0;
+            }
+        </code>
+    </pre>
+</body>
+</html>
